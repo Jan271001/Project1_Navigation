@@ -21,5 +21,4 @@ information, the agent learned how to best select actions. Four discrete actions
 The task is episodic, and in order to solve the environment, the agent must reach an average score of +13 over 100 consecutive episodes.
 
 ## Getting started
-Before runing the code in the jupyter-notebook make sure to install the necessary libraries.
-If you'd like to install them on your own machine please follow the instructions below.
+Before runing the code in the jupyter-notebook make sure to install the necessary libraries. If you'd like to install them on your own machine please follow the instructions below. These instructions implay that your machine allready satisfys conditions to run jupyter notebooks and python3-code.
