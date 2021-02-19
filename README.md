@@ -29,3 +29,5 @@ To set up your python environment to run the code in this repository, follow the
 
 ## Use the Code
 In order to use the code in this repository make sure your machine satisfys all requirements in the "Getting started"- paragraph above. Now you are free to clone this repository and use it on your own computer(!No GPU-support is needed!). After cloning, you have to open a terminal and navigate to the folder representing the repository. Please open a jupyter notebook using the *jupyter notebook* command. The Notebook will open in your browser. In the end you have to open the "Navigation_Jan_Amtmann_Training"-file and restart the kernal by clicking on the "restart"-button. A dialog will open, please click on "restart and run all cells". Finally you can watch the agent train.
+
+### For additional information please read the "Report.md"-file
