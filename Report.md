@@ -2,4 +2,4 @@
 
 ## The result
 
-![Plot of rewards](/home/osboxes/Bilder/Navigation_Plot.png)
+![Plot of rewards](Navigation_Plot.png)
