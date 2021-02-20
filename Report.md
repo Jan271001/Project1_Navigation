@@ -2,7 +2,7 @@
 
 ## The result
 
-![Plot of rewards](Navigation_Plot.png)
+![Plot of rewards](Navigation_Score.png)
 
 The agent was able to solve the environment in 328 episodes, with an average reward of 13.04. The average reward after all 500 traing-episodes is 15.35.
 
