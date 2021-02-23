@@ -14,12 +14,12 @@ For this project I used the standard Deep-Q-Learning-algotithm. I operate with a
 
 **epsilon (temporally variable):**
 
-**start value:** *1.0*
+start value: *1.0*
 
-**end value:** *0.01*
+end value: *0.01*
 
-**decay:** *0.995*
+decay: *0.995*
 
 **discount rate gamma (constant):**
 
-**value:** *0.99*
+value: *0.99*
