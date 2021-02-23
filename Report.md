@@ -8,7 +8,7 @@ The agent was able to solve the environment in 328 episodes, with an average rew
 
 ## The algotithm
 
-For this project I used the standard Deep-Q-Learning-algotithm. I operate with a four layer feed-forward neural network with 37 input nodes, 64 nodes in the two hidden layers and 4 output nodes which represent the four actions the agent can take. The input layer is designed to obtain an input vector with 37 dimensions represanting the current state of the environment. I used an epsilon greedy policy an
+For this project I used the standard Deep-Q-Learning-algotithm. I operate with a four layer feed-forward neural network with 37 input nodes, 64 nodes in the two hidden layers and 4 output nodes which represent the four actions the agent can take. The input layer is designed to obtain an input vector with 37 dimensions represanting the current state of the environment. I used an epsilon greedy policy and a discount rate. To guarantee the repeatability I used a random seed of 0.
 
 ### Hyperparameters
 
@@ -23,3 +23,7 @@ decay: *0.995*
 **discount rate gamma (constant):**
 
 value: *0.99*
+
+**random seed:**
+
+value: *0*
