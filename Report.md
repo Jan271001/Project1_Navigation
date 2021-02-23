@@ -12,9 +12,14 @@ For this project I used the standard Deep-Q-Learning-algotithm. I operate with a
 
 ### Hyperparameters
 
-####epsilon (temporally variable): 
-start value: 1.0; 
-end value: 0.01
-decay: 0.995
-  
-  *discount rate: gamma; value: 0.99*
+**epsilon (temporally variable):**
+
+**start value:** *1.0*
+
+**end value:** *0.01*
+
+**decay:** *0.995*
+
+**discount rate gamma (constant):**
+
+**value:** *0.99*
