@@ -36,6 +36,8 @@ The main file in this repository is the *Navigation_Training.ipynb* notebook. It
 
 Def_train() operates with the allready mentioned Deep-Q-Learning-algotithm. Before I adress the actuall Q-learning I have to define the saving of scores as well as the reset of the environment. That relocated environment depict the first state the agent observes in each episode. It gets repositioned prior every episode. The actual algorithm has the following structure: 
 
+#### Pseudocode:
+
 *open loop(max timesteps like defined above)*
 
 *select an action*
