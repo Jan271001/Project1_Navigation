@@ -8,7 +8,7 @@ The agent was able to solve the environment in 328 episodes, with an average rew
 
 ## The algorithm
 
-For this project I used the standard Deep-Q-Learning-algorithm. I operate with a four layer feed-forward neural network with 37 input nodes, 64 nodes in the two hidden layers and 4 output nodes which represent the four actions the agent can take. The input layer is designed to obtain an input vector with 37 dimensions representing the current state of the environment. In order to explore the entire state space I used an epsilon greedy policy. To prioritize the current reward higher then the expected one of the following time steps I operate with a discount rate of 0.99. To guarantee the repeatability I applied a random seed of 0.
+For this project I used the standard Deep-Q-Learning-algorithm. I operate with a four layer feed-forward neural network with 37 input nodes, 64 nodes in the two hidden layers and 4 output nodes which represent the four actions the agent can take. The input layer is designed to obtain an input vector with 37 dimensions representing the current state of the environment. In order to explore the entire state space I used an epsilon greedy policy. To prioritize the current reward higher then the expected one of the following time steps I operate with a discount rate of 0.99. To guarantee the repeatability I applied a random seed of 0. The local network used to generate the action has the same architecture as the target network necessary to calculate the error. Both of them are Feed-Forward-NNs with the structure described above. For this task FNNs build the best working approach, because they are much less complicated than CNNs or RNNs and still perform pretty well.
 
 ### Hyperparameters
 
