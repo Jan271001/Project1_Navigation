@@ -30,9 +30,35 @@ value: *0*
 
 ### Detailed description of the implementation
 
-For this project I worked with an object-oriented approach. I used three classes called **Agent**, **QNetwork** and **ReplayBuffer** saved in *agent_navigation.py*, *model.py* and *replay_buffer.py*. TAn object of the ReplayBuffer-class represents the memory of the agent, while one of the QNetwork-class could be called the agents brain. The agent in my implementation needs both of them to work properly.
+For this project I worked with an object-oriented approach. I used three classes called **Agent**, **QNetwork** and **ReplayBuffer** saved in *agent_navigation.py*, *model.py* and *replay_buffer.py*. An object of the ReplayBuffer-class represents the memory of the agent, while one of the QNetwork-class substitute for the agents brain. The agent in my implementation needs both of them to work properly.As a consequence, both classes get imported in the *agent_navigation.py*-file.
 
-The main file in this repository is the *Navigation_Training.ipynb* notebook. It's the heart of my implementation and hosts the Deep-Q-Learning algorithm. In this file I build the connection with the environment. The environment I operate with is the *Banana.x86_64* from the *Banana_Linux*-folder.  
+The main file in this repository is the *Navigation_Training.ipynb* notebook. It's the heart of my implementation and hosts the Deep-Q-Learning algorithm. In this file I estabish the connection with the environment. The environment I operate with is the *Banana.x86_64*-environment. It's saved in the *Banana_Linux*-folder. At first I had to integrate the different libraries and classes, including the Agent-class. In the next step I defined the different hyperparameters like mentioned  in the chapter above. Additional I set the number of max time-steps (e.g. 1000) and max episodes (e.g. 500) and save the environment parameters like state- and action-space (e.g. 37/4). In the following lines I load the enviroment and define an agent as well as a training-method **def_train(...)**.
+
+Def_train() operates with the allready mentioned Deep-Q-Learning-algotithm. Before I adress the actuall Q-learning I have to define the saving of scores as well as the reset of the environment. That relocated environment depict the first state the agent observes in each episode. It gets repositioned prior every episode. The actual algorithm has the following structure: 
+
+*open loop(max timesteps like defined above)
+
+*select an action
+
+*send the action to the environment
+
+*get the next state
+            
+*get the reward
+            
+*see if episode has finished
+
+*save step in memory and learn from this step
+
+*update the score
+
+*roll over the state to next time step
+
+*exit loop if episode finished
+
+This pseudocode represents the proceed in one single episode. It gets repeeted till the number of max episodes is reached. After that, there's only a few things left. A plot of the score and a line code to close the environment.
+
+As a last important file in this notebook I write a implementation showing the performance of an allready trained agent (*Navigation_Trained_Agent_Test.ipynb*). 
 
 ## Future ideas
 
