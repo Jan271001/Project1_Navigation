@@ -36,25 +36,25 @@ The main file in this repository is the *Navigation_Training.ipynb* notebook. It
 
 Def_train() operates with the allready mentioned Deep-Q-Learning-algotithm. Before I adress the actuall Q-learning I have to define the saving of scores as well as the reset of the environment. That relocated environment depict the first state the agent observes in each episode. It gets repositioned prior every episode. The actual algorithm has the following structure: 
 
-*open loop(max timesteps like defined above)
+*open loop(max timesteps like defined above)*
 
-*select an action
+*select an action*
 
-*send the action to the environment
+*send the action to the environment*
 
-*get the next state
+*get the next state*
             
-*get the reward
+*get the reward*
             
-*see if episode has finished
+*see if episode has finished*
 
-*save step in memory and learn from this step
+*save step in memory and learn from this step*
 
-*update the score
+*update the score*
 
-*roll over the state to next time step
+*roll over the state to next time step*
 
-*exit loop if episode finished
+*exit loop if episode finished*
 
 This pseudocode represents the proceed in one single episode. It gets repeeted till the number of max episodes is reached. After that, there's only a few things left. A plot of the score and a line code to close the environment.
 
